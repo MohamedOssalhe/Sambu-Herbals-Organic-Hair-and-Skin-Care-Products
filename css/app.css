@@ -1,0 +1,184 @@
+:root {
+  --primary-clr: #0a540a;
+  --secondary-clr: #93c85c;
+  --third-clr: #d6faff;
+  --footer-bg: rgba(214, 250, 255, 0.493);
+  --font-M: "Montserrat Alternates", sans-serif;
+  --font-L: "Lora", serif;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-bg-clr {
+  background-color: var(--primary-clr);
+  color: var(--third-clr);
+}
+
+.third-bg-clr {
+  background-color: var(--third-clr);
+  color: var(--primary-clr);
+}
+
+.landing-content {
+  font-family: var(--font-M);
+}
+
+.landing-content .content-wrapper .content-text h1 {
+  font-size: 3.5em;
+  font-family: var(--font-L);
+}
+
+.landing-content .content-wrapper .content-text .product-links .product-link a {
+  font-size: 1.2em;
+}
+
+.landing-content .content-wrapper .content-text .product-links .product-link a:hover {
+  color: var(--primary-clr) !important;
+  text-decoration: underline !important;
+}
+
+.landing-content .content-wrapper .content-text .product-links .product-link a::after {
+  content: url("../img/svg/Arrow 2.svg");
+  margin-left: 1em;
+}
+
+.landing-content .content-wrapper .content-text::before {
+  content: "";
+  position: absolute;
+  left: 10em;
+  top: 5em;
+  height: 42em;
+  width: 45em;
+  background-image: url("../img/splash2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  z-index: -1;
+}
+
+.landing-content .content-wrapper .content-text::after {
+  content: "";
+  position: absolute;
+  left: 10em;
+  top: 5em;
+  height: 42em;
+  width: 45em;
+  background-color: #d6faff99;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-content .content-wrapper .content-text::before {
+    content: "";
+    position: absolute;
+    left: 0em;
+    top: 5em;
+    height: 40em;
+    width: 40em;
+    background-image: url("../img/splash2.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    z-index: -1;
+  }
+  .landing-content .content-wrapper .content-text::after {
+    content: "";
+    position: absolute;
+    left: 0em;
+    top: 5em;
+    height: 40em;
+    width: 40em;
+    background-color: #d6faff99;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    z-index: -1;
+  }
+}
+
+.landing-content .popular-products .products-wrapper .products .product {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-content .popular-products .products-wrapper .products .product {
+    width: 100% !important;
+    cursor: pointer;
+  }
+}
+
+footer {
+  position: relative;
+  background-color: var(--footer-bg);
+  z-index: 3;
+}
+
+footer .footer-wrapper {
+  z-index: 3;
+}
+
+footer .floating {
+  position: absolute;
+}
+
+footer .floating1 {
+  height: 190px;
+  bottom: 0;
+  left: 0;
+}
+
+footer .floating2 {
+  height: 150px;
+  right: 0;
+}
+
+footer .floating3 {
+  height: 90px;
+  top: 2em;
+  right: 35em;
+}
+
+footer .floating4 {
+  height: 50px;
+  bottom: 0;
+  left: 30em;
+}
+
+footer .floating5 {
+  height: 40px;
+  top: 3em;
+  left: 10em;
+}
+
+footer .floating6 {
+  height: 110px;
+  bottom: 3em;
+  right: 15em;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-wrapper {
+    z-index: 3;
+  }
+  footer .floating1 {
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
